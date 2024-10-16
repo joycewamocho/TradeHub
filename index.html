@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/style.css"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">MarketHub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#available-Products ">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#post-product">Post Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#cart">Cart</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search products" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    </nav>
+  </header>
+
+  <section id="available-Products">
+    <div class="container my-4">
+      <h2 class="text-center mb-4">Available Products</h2>
+      <div id="product-list" class="row"></div>
+  </div>
+  </section>
+
+
+  <section id="post-product">
+    <div class="container my-4">
+      <h2 class="text-center mb-4">Post a Product</h2>
+      <form id="product-form" class="mb-4">
+          <div class="form-group">
+              <label for="product-name">Product Name</label>
+              <input type="text" class="form-control" id="product-name" placeholder="Enter product name" required>
+          </div>
+          <div class="form-group">
+              <label for="product-description">Product Description</label>
+              <textarea class="form-control" id="product-description" rows="3" placeholder="Enter product description" required></textarea>
+          </div>
+          <div class="form-group">
+              <label for="product-price">Price</label>
+              <input type="number" class="form-control" id="product-price" placeholder="Enter product price" required>
+          </div>
+          <div class="form-group">
+              <label for="seller-contact">Seller's Contact Number</label>
+              <input type="tel" class="form-control" id="seller-contact" placeholder="Enter your contact number" required>
+          </div>
+          <div class="form-group">
+              <label for="product-image">Product Image URL</label>
+              <input type="url" class="form-control" id="product-image" placeholder="Enter image URL" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Post Product</button>
+      </form>
+  </div>
+  
+
+  
+  </section>
+  <script src="./index.js"></script>
+</body>
+</html>
+
+
+  
+</body>
+</html>

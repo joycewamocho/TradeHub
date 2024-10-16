@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation.",
+      "price": 89.99,
+      "contact": "555-1234",
+      "image": "https://images.stockcake.com/public/6/9/7/6975704e-2812-47f6-8f4f-9267dc0b0e23_large/black-wireless-headphones-stockcake.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "description": "Latest model smartphone with all the features you need.",
+      "price": 699.99,
+      "contact": "555-5678",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 3,
+      "name": "Laptop",
+      "description": "A powerful laptop for gaming and professional work.",
+      "price": 1199.99,
+      "contact": "555-9101",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+    },
+    {
+      "id": 4,
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with great sound quality.",
+      "price": 49.99,
+      "contact": "555-1122",
+      "image": "https://images.stockcake.com/public/b/f/9/bf9c96f3-1f02-4e2d-be08-f3a26d193fc3_large/outdoor-musical-picnic-stockcake.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Leather Jacket",
+      "description": "Stylish black leather jacket.",
+      "price": 199.99,
+      "contact": "555-3333",
+      "image": "https://images.stockcake.com/public/0/1/3/01336bc4-3835-49dd-bd75-6772aa1f3cc6_large/leather-jacket-hanging-stockcake.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Office Desk",
+      "description": "Spacious office desk with built-in storage.",
+      "price": 299.99,
+      "contact": "555-4444",
+      "image": "https://images.stockcake.com/public/a/2/2/a227156b-ce50-4e5f-bd90-d7a651f1e32f_large/elegant-home-office-stockcake.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Dining Table",
+      "description": "Wooden dining table with 6 chairs.",
+      "price": 499.99,
+      "contact": "555-5555",
+      "image": "https://images.stockcake.com/public/0/2/b/02b9cc26-e573-48e5-9080-be959d9d0e48_large/stylish-dining-space-stockcake.jpg"
+    },
+    {
+      "id": "071f",
+      "name": "Floral summer dress",
+      "description": "A beautiful white summer dress with a floral print.",
+      "price": "47",
+      "contact": "072800000",
+      "image": "https://images.stockcake.com/public/7/9/1/7910a39b-f3e4-41dd-bcd4-a625ec946bab_large/floral-summer-dress-stockcake.jpg"
+    },
+    {
+      "id": "970e",
+      "name": "Casual Cargo pants",
+      "description": "A pair of olive green cargo pants with a brown leather belt",
+      "price": "28",
+      "contact": "072800000",
+      "image": "https://images.stockcake.com/public/c/b/4/cb4910e0-41b3-4ca8-bfe9-27148743c536_large/casual-cargo-pants-stockcake.jpg"
+    },
+    {
+      "id": "907f",
+      "name": "coffee mug",
+      "description": "a white coffee mug",
+      "price": "22",
+      "contact": "0700000000",
+      "image": "https://images.stockcake.com/public/5/4/a/54a1d0e6-2cd0-480b-aa6d-f18c80745909_large/barcoded-coffee-mug-stockcake.jpg"
+    }
+  ]
+}

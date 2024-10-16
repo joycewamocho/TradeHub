@@ -1,0 +1,32 @@
+.navbar-brand {
+    font-weight: bold;
+}
+.nav-link {
+    font-weight: 500;
+}
+
+.card {
+    /* height: 650px;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    
+     
+  }
+  /* .card:hover{
+    
+  }
+   */
+  .card img {
+    object-fit: cover; 
+    height: 300px; 
+    width: 100%; 
+  }
+  
+  .card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
