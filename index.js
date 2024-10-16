@@ -1,3 +1,6 @@
+let products =[]
+const baseUrl ="https://my-json-server.typicode.com/joycewamocho/TradeHub/products"
+
 const main = ()=>{
     document.addEventListener("DOMContentLoaded", ()=>{
       postProducts(); 
@@ -21,7 +24,7 @@ const postProducts =()=>{
             image: productForm["product-image"].value
         }
 
-    fetch("http://localhost:3000/products",{
+    fetch(`${baseUrl}`,{
         method:"POST",
         headers:{
             "content-type":"application/json",
@@ -65,7 +68,7 @@ const displayProduct=(myProducts)=>{
 }
 
 const getProduct=()=>{
-    fetch("http://localhost:3000/products")
+    fetch(`${baseUrl}`)
     .then((response)=>response.json())
     .then((products)=>{
         products.forEach((product)=>displayProduct(product))
