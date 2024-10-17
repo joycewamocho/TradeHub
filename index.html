@@ -7,22 +7,22 @@
   <link rel="stylesheet" href="src/css/style.css"/>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">MarketHub</a>
+    <a class="navbar-brand" href="#">TradeHub</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
+         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#available-Products ">Products</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#post-product">Post Products</a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#cart">Cart</a>
             </li>
@@ -34,6 +34,24 @@
     </div>
     </nav>
   </header>
+
+  <section id="login" class="container my-4">
+    <h2 class="text-center">User Login</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </form>
+    <div class="text-center mt-3">
+      <small>Don't have an account? <a href="#">Sign up</a></small>
+    </div>
+  </section>
 
   <section id="available-Products">
     <div class="container my-4">
@@ -70,14 +88,18 @@
           <button type="submit" class="btn btn-primary">Post Product</button>
       </form>
   </div>
-  
-
-  
-  </section>
+ </section>
   <script src="index.js"></script>
 </body>
 </html>
 
+
+<section class="cart" id="cart">
+  <h2 class="text-center mb-4">cart</h2>
+  <div id="cart-list" class="cart-list">
+
+ </div>
+</section>
 
   
 </body>

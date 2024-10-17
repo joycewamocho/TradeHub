@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Wireless Headphones",
       "description": "High-quality wireless headphones with noise cancellation.",
       "price": 89.99,
@@ -9,7 +9,7 @@
       "image": "https://images.stockcake.com/public/6/9/7/6975704e-2812-47f6-8f4f-9267dc0b0e23_large/black-wireless-headphones-stockcake.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Smartphone",
       "description": "Latest model smartphone with all the features you need.",
       "price": 699.99,
@@ -17,7 +17,7 @@
       "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Laptop",
       "description": "A powerful laptop for gaming and professional work.",
       "price": 1199.99,
@@ -25,7 +25,7 @@
       "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Bluetooth Speaker",
       "description": "Portable Bluetooth speaker with great sound quality.",
       "price": 49.99,
@@ -33,7 +33,7 @@
       "image": "https://images.stockcake.com/public/b/f/9/bf9c96f3-1f02-4e2d-be08-f3a26d193fc3_large/outdoor-musical-picnic-stockcake.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Leather Jacket",
       "description": "Stylish black leather jacket.",
       "price": 199.99,
@@ -41,7 +41,7 @@
       "image": "https://images.stockcake.com/public/0/1/3/01336bc4-3835-49dd-bd75-6772aa1f3cc6_large/leather-jacket-hanging-stockcake.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Office Desk",
       "description": "Spacious office desk with built-in storage.",
       "price": 299.99,
@@ -49,7 +49,7 @@
       "image": "https://images.stockcake.com/public/a/2/2/a227156b-ce50-4e5f-bd90-d7a651f1e32f_large/elegant-home-office-stockcake.jpg"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Dining Table",
       "description": "Wooden dining table with 6 chairs.",
       "price": 499.99,
@@ -79,6 +79,15 @@
       "price": "22",
       "contact": "0700000000",
       "image": "https://images.stockcake.com/public/5/4/a/54a1d0e6-2cd0-480b-aa6d-f18c80745909_large/barcoded-coffee-mug-stockcake.jpg"
+    },
+    {
+      "id": "c60c",
+      "name": "chair",
+      "description": "green chair",
+      "price": "25000",
+      "contact": "072800000",
+      "image": "https://images.stockcake.com/public/f/8/4/f844c72e-033e-471f-9dc3-639baa75e6a4_large/solitary-office-chair-stockcake.jpg"
     }
-  ]
+  ],
+  "users": []
 }
