@@ -87,7 +87,21 @@
       "price": "25000",
       "contact": "072800000",
       "image": "https://images.stockcake.com/public/f/8/4/f844c72e-033e-471f-9dc3-639baa75e6a4_large/solitary-office-chair-stockcake.jpg"
+    },
+    {
+      "id": "bfbe",
+      "name": "sweater",
+      "description": "black sweater",
+      "price": "50",
+      "contact": "072800000",
+      "image": "https://images.stockcake.com/public/c/e/0/ce0f44fe-a7e8-4b64-a71f-885790df83ac_large/checkered-knit-sweater-stockcake.jpg"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "id": "daeb",
+      "username": "joyce",
+      "password": "123"
+    }
+  ]
 }

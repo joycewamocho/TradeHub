@@ -7,10 +7,27 @@ const main = ()=>{
       getProduct();
       searchProduct();
       displayCart();
+      toggleLoginForm();
+
     })
 }
 
 main()
+
+const toggleLoginForm =()=>{
+    const toggleButton = document.getElementById("toggle-login");
+    const loginSection = document.getElementById("login");
+
+    console.log(toggleButton);
+    toggleButton.addEventListener("click", () => {
+        if (loginSection.style.display === "none" || loginSection.style.display === "") {
+            loginSection.style.display = "block";
+        } else {
+            loginSection.style.display = "none"; 
+        }
+    });
+
+}
 
 const postProducts =()=>{
     const productForm = document.getElementById("product-form")
@@ -25,7 +42,7 @@ const postProducts =()=>{
             image: productForm["product-image"].value
         }
 
-    fetch(baseUrl,{
+    fetch("http://localhost:3000/products",{
         method:"POST",
         headers:{
             "content-type":"application/json",
@@ -77,7 +94,7 @@ const displayProduct=(myProducts)=>{
 }
 
 const getProduct=()=>{
-    fetch(baseUrl)
+    fetch("http://localhost:3000/products")
     .then((response)=>response.json())
     .then((products)=>{
         products.forEach((product)=>displayProduct(product))
