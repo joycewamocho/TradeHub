@@ -1,6 +1,5 @@
 const baseUrl = "https://my-json-server.typicode.com/joycewamocho/TradeHub/products";
-const usersUrl = "https://my-json-server.typicode.com/joycewamocho/TradeHub/users";
-const cartUrl = "http://localhost:3000/cart"; 
+const cartUrl = "https://my-json-server.typicode.com/joycewamocho/TradeHub/cart";
 let totalPrice = 0;
 
 const main = () => {
@@ -15,7 +14,6 @@ const main = () => {
 
 main();
 
-//toggle login form
 const toggleLoginForm = () => {
     const toggleButton = document.getElementById("toggle-login");
     const loginSection = document.getElementById("login");
@@ -30,7 +28,6 @@ const toggleLoginForm = () => {
     });
 }
 
-//post products to database
 const postProducts = () => {
     const productForm = document.getElementById("product-form");
     productForm.addEventListener("submit", (event) => {
@@ -44,7 +41,7 @@ const postProducts = () => {
             image: productForm["product-image"].value
         }
 
-        fetch("http://localhost:3000/products", {
+        fetch("https://my-json-server.typicode.com/joycewamocho/TradeHub/products", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -64,7 +61,7 @@ const postProducts = () => {
     });
 }
 
-//Display product
+
 const displayProduct = (myProducts) => {
     const productList = document.getElementById("product-list");
     const productDiv = document.createElement("div");
@@ -83,13 +80,12 @@ const displayProduct = (myProducts) => {
     `;
     productList.appendChild(productDiv);
 
-    // Add to cart functionality
     const cartBtn = productDiv.querySelector(".cart-btn");
     cartBtn.addEventListener("click", () => addToCart(myProducts));
 }
 
 const getProduct = () => {
-    fetch("http://localhost:3000/products")
+    fetch("https://my-json-server.typicode.com/joycewamocho/TradeHub/products")
     .then((response) => response.json())
     .then((products) => {
         products.forEach((product) => displayProduct(product));
@@ -116,9 +112,9 @@ const searchProduct = () => {
 }
 
 const addToCart = (product) => {
-    totalPrice += parseFloat(product.price); // Ensure price is treated as a number
+    totalPrice += parseFloat(product.price); 
 
-    fetch(cartUrl, {
+    fetch("https://my-json-server.typicode.com/joycewamocho/TradeHub/cart", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -129,7 +125,7 @@ const addToCart = (product) => {
     .then(response => response.json())
     .then(() => {
         alert(`${product.name} has been added to cart`);
-        displayCart(); // Update the cart display
+        displayCart(); 
     })
     .catch(error => {
         console.error("Error adding to cart:", error);
@@ -138,45 +134,44 @@ const addToCart = (product) => {
 
 const displayCart = () => {
     const cartList = document.getElementById("cart-list");
-    cartList.innerHTML = "<h3>Your cart</h3>"; // Header for the cart items
+    cartList.innerHTML = "<h3>Your cart</h3>";
 
     fetch(cartUrl)
     .then(response => response.json())
     .then((cartItems) => {
         if (cartItems.length === 0) {
-            cartList.innerHTML += "<p>Your cart is empty.</p>"; // Display message if no items in cart
-            document.getElementById("total").textContent = "Total: $0.00"; // Reset total price
+            cartList.innerHTML += "<p>Your cart is empty.</p>"; 
+            document.getElementById("total").textContent = "Total: $0.00"; 
             return;
         }
 
-        let totalCartPrice = 0; // Initialize total price based on cart items
+        let totalCartPrice = 0; 
 
         cartItems.forEach((product) => {
             const cartItem = document.createElement("p");
             cartItem.textContent = `${product.name} - $${product.price}`;
             cartList.appendChild(cartItem);
 
-            totalCartPrice += parseFloat(product.price); // Accumulate total price
+            totalCartPrice += parseFloat(product.price); 
         });
 
-        // Update the total price
         const totalPriceDiv = document.getElementById("total");
         console.log(totalPriceDiv);
         totalPriceDiv.textContent = `Total: $${totalCartPrice.toFixed(2)}`;
 
-        // Remove previous Buy button if it exists
+        
         const existingBuyButton = document.querySelector('.btn-primary');
         if (existingBuyButton) {
             existingBuyButton.remove();
         }
 
-        // Create and append the "Buy All" button
+        
         const buyButton = document.createElement("button");
         buyButton.textContent = "Buy All";
-        buyButton.className = "btn btn-primary"; // Add Bootstrap button style
+        buyButton.className = "btn btn-primary"; 
         buyButton.addEventListener("click", buyAllProducts);
 
-        // Append the button after total price
+        
         totalPriceDiv.parentElement.appendChild(buyButton);
     })
     .catch(error => {
@@ -186,7 +181,7 @@ const displayCart = () => {
 
 const buyAllProducts = () => {
     if (confirm("Do you want to purchase all the items in your cart?")) {
-        fetch(cartUrl)
+        fetch("https://my-json-server.typicode.com/joycewamocho/TradeHub/cart")
         .then(response => response.json())
         .then((cartItems) => {
             const deletePromises = cartItems.map(item =>
@@ -196,8 +191,8 @@ const buyAllProducts = () => {
             Promise.all(deletePromises)
             .then(() => {
                 alert("Thank you for your purchase!");
-                totalPrice = 0; // Reset total price after purchase
-                displayCart(); // Refresh cart display
+                totalPrice = 0; 
+                displayCart(); 
             })
             .catch(error => {
                 console.error("Error clearing cart:", error);
