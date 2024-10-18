@@ -13,7 +13,7 @@ const main = () => {
 }
 
 main();
-
+//toggle login form
 const toggleLoginForm = () => {
     const toggleButton = document.getElementById("toggle-login");
     const loginSection = document.getElementById("login");
@@ -28,6 +28,7 @@ const toggleLoginForm = () => {
     });
 }
 
+//post product to database
 const postProducts = () => {
     const productForm = document.getElementById("product-form");
     productForm.addEventListener("submit", (event) => {
@@ -61,7 +62,7 @@ const postProducts = () => {
     });
 }
 
-
+//display products to UI
 const displayProduct = (myProducts) => {
     const productList = document.getElementById("product-list");
     const productDiv = document.createElement("div");
@@ -84,6 +85,7 @@ const displayProduct = (myProducts) => {
     cartBtn.addEventListener("click", () => addToCart(myProducts));
 }
 
+//gretrieve product from the database
 const getProduct = () => {
     fetch(baseUrl)
     .then((response) => response.json())
@@ -92,6 +94,7 @@ const getProduct = () => {
     });
 }
 
+//search functionality
 const searchProduct = () => {
     const searchInput = document.querySelector('input[type="search"]');
     const productList = document.getElementById('product-list');
@@ -131,7 +134,7 @@ const addToCart = (product) => {
         console.error("Error adding to cart:", error);
     });
 }
-
+//display products that has been added to cart
 const displayCart = () => {
     const cartList = document.getElementById("cart-list");
     cartList.innerHTML = "<h3>Your cart</h3>";
@@ -178,7 +181,7 @@ const displayCart = () => {
         console.error("Error displaying cart:", error);
     });
 }
-
+//buy functionality
 const buyAllProducts = () => {
     if (confirm("Do you want to purchase all the items in your cart?")) {
         fetch(cartUrl)
