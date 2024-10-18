@@ -95,6 +95,14 @@
       "price": "50",
       "contact": "072800000",
       "image": "https://images.stockcake.com/public/c/e/0/ce0f44fe-a7e8-4b64-a71f-885790df83ac_large/checkered-knit-sweater-stockcake.jpg"
+    },
+    {
+      "id": "0eb2",
+      "name": "Casual Cargo pants",
+      "description": "pants",
+      "price": "66666",
+      "contact": "072800000",
+      "image": "https://images.stockcake.com/public/c/b/4/cb4910e0-41b3-4ca8-bfe9-27148743c536_large/casual-cargo-pants-stockcake.jpg"
     }
   ],
   "cart": []
