@@ -79,30 +79,6 @@
       "price": "22",
       "contact": "0700000000",
       "image": "https://images.stockcake.com/public/5/4/a/54a1d0e6-2cd0-480b-aa6d-f18c80745909_large/barcoded-coffee-mug-stockcake.jpg"
-    },
-    {
-      "id": "c60c",
-      "name": "chair",
-      "description": "green chair",
-      "price": "25000",
-      "contact": "072800000",
-      "image": "https://images.stockcake.com/public/f/8/4/f844c72e-033e-471f-9dc3-639baa75e6a4_large/solitary-office-chair-stockcake.jpg"
-    },
-    {
-      "id": "bfbe",
-      "name": "sweater",
-      "description": "black sweater",
-      "price": "50",
-      "contact": "072800000",
-      "image": "https://images.stockcake.com/public/c/e/0/ce0f44fe-a7e8-4b64-a71f-885790df83ac_large/checkered-knit-sweater-stockcake.jpg"
-    },
-    {
-      "id": "0eb2",
-      "name": "Casual Cargo pants",
-      "description": "pants",
-      "price": "66666",
-      "contact": "072800000",
-      "image": "https://images.stockcake.com/public/c/b/4/cb4910e0-41b3-4ca8-bfe9-27148743c536_large/casual-cargo-pants-stockcake.jpg"
     }
   ],
   "cart": []
