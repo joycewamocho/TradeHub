@@ -4,10 +4,9 @@ Trade Hub is a marketplace application where users can post products for sale, b
 
 ## Features
 
-- **User Login:** Toggle the login form to access user functionalities.
 - **Product Posting:** Users can submit product details to be listed in the marketplace.
-- **Product Browsing:** View a list of available products with images, descriptions, and contact details.
-- **Shopping Cart:** Users can add products to their cart for a streamlined purchasing process.
+- **Product Browsing:** View a list of available products with images, descriptions,price and contact details.
+- **Shopping Cart:** Users can add products to their cart for a streamlined purchasing process, and add the totol cost of items in cart.
 - **Search Functionality:** Quickly search for products by name.
 
 ## Technologies Used
