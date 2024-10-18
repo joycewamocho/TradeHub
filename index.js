@@ -1,5 +1,5 @@
 const baseUrl = "https://my-json-server.typicode.com/joycewamocho/TradeHub/products";
-const cartUrl = "https://my-json-server.typicode.com/joycewamocho/TradeHub/cart";
+const cartUrl = "https://my-json-server.typicode.com/joycewamocho/TradeHub/products";
 let totalPrice = 0;
 
 const main = () => {
@@ -41,7 +41,7 @@ const postProducts = () => {
             image: productForm["product-image"].value
         }
 
-        fetch("https://my-json-server.typicode.com/joycewamocho/TradeHub/products", {
+        fetch(`${baseUrl}`, {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -85,7 +85,7 @@ const displayProduct = (myProducts) => {
 }
 
 const getProduct = () => {
-    fetch("https://my-json-server.typicode.com/joycewamocho/TradeHub/products")
+    fetch(baseUrl)
     .then((response) => response.json())
     .then((products) => {
         products.forEach((product) => displayProduct(product));
@@ -114,7 +114,7 @@ const searchProduct = () => {
 const addToCart = (product) => {
     totalPrice += parseFloat(product.price); 
 
-    fetch("https://my-json-server.typicode.com/joycewamocho/TradeHub/cart", {
+    fetch(`${cartUrl}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -181,7 +181,7 @@ const displayCart = () => {
 
 const buyAllProducts = () => {
     if (confirm("Do you want to purchase all the items in your cart?")) {
-        fetch("https://my-json-server.typicode.com/joycewamocho/TradeHub/cart")
+        fetch(cartUrl)
         .then(response => response.json())
         .then((cartItems) => {
             const deletePromises = cartItems.map(item =>
