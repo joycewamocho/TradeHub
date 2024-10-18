@@ -97,46 +97,5 @@
       "image": "https://images.stockcake.com/public/c/e/0/ce0f44fe-a7e8-4b64-a71f-885790df83ac_large/checkered-knit-sweater-stockcake.jpg"
     }
   ],
-  "cart": [
-    {
-      "id": "c60c",
-      "name": "chair",
-      "description": "green chair",
-      "price": "25000",
-      "contact": "072800000",
-      "image": "https://images.stockcake.com/public/f/8/4/f844c72e-033e-471f-9dc3-639baa75e6a4_large/solitary-office-chair-stockcake.jpg"
-    },
-    {
-      "id": "bfbe",
-      "name": "sweater",
-      "description": "black sweater",
-      "price": "50",
-      "contact": "072800000",
-      "image": "https://images.stockcake.com/public/c/e/0/ce0f44fe-a7e8-4b64-a71f-885790df83ac_large/checkered-knit-sweater-stockcake.jpg"
-    },
-    {
-      "id": "7",
-      "name": "Dining Table",
-      "description": "Wooden dining table with 6 chairs.",
-      "price": 499.99,
-      "contact": "555-5555",
-      "image": "https://images.stockcake.com/public/0/2/b/02b9cc26-e573-48e5-9080-be959d9d0e48_large/stylish-dining-space-stockcake.jpg"
-    },
-    {
-      "id": "c60c",
-      "name": "chair",
-      "description": "green chair",
-      "price": "25000",
-      "contact": "072800000",
-      "image": "https://images.stockcake.com/public/f/8/4/f844c72e-033e-471f-9dc3-639baa75e6a4_large/solitary-office-chair-stockcake.jpg"
-    },
-    {
-      "id": "970e",
-      "name": "Casual Cargo pants",
-      "description": "A pair of olive green cargo pants with a brown leather belt",
-      "price": "28",
-      "contact": "072800000",
-      "image": "https://images.stockcake.com/public/c/b/4/cb4910e0-41b3-4ca8-bfe9-27148743c536_large/casual-cargo-pants-stockcake.jpg"
-    }
-  ]
+  "cart": []
 }

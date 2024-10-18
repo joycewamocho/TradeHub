@@ -1,5 +1,5 @@
-const baseUrl = "https://my-json-server.typicode.com/joycewamocho/TradeHub/products";
-const cartUrl = "https://my-json-server.typicode.com/joycewamocho/TradeHub/products";
+const baseUrl = "http://localhost:3000/products"
+const cartUrl = "http://localhost:3000/cart"
 let totalPrice = 0;
 
 const main = () => {
