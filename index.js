@@ -1,5 +1,5 @@
-const baseUrl = "http://localhost:3000/products"
-const cartUrl = "http://localhost:3000/cart"
+const baseUrl = "https://tradehub-k2u8.onrender.com/products"
+const cartUrl = "https://tradehub-k2u8.onrender.com/cart"
 let totalPrice = 0;
 
 const main = () => {
@@ -163,7 +163,7 @@ const displayCart = () => {
         totalPriceDiv.textContent = `Total: $${totalCartPrice.toFixed(2)}`;
 
         
-        const existingBuyButton = document.querySelector('.btn-primary');
+        const existingBuyButton = document.getElementById('buy-all-btn');
         if (existingBuyButton) {
             existingBuyButton.remove();
         }
@@ -171,6 +171,7 @@ const displayCart = () => {
         
         const buyButton = document.createElement("button");
         buyButton.textContent = "Buy All";
+        buyButton.id ="buy-all-btn"
         buyButton.className = "btn btn-primary"; 
         buyButton.addEventListener("click", buyAllProducts);
 
